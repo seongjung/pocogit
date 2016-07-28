@@ -23,13 +23,8 @@
 			<script src="/assets/js/bootstrap.min.js"></script>
 			<!--<script src="/assets/js/Chart.js"></script>-->
 		<!--script-->
-			 <script src="/assets/js/modernizr.custom.js"></script>
-            <script src="/assets/js/bigSlide.js"></script>
-            <script>
-				$(document).ready(function() {
-				$('.menu-link').bigSlide();
-				});
-            </script>
+			<script src="/assets/js/modernizr.custom.js"></script>
+        
 			<script type="text/javascript" src="/assets/js/move-top.js"></script>
       <script type="text/javascript" src="/assets/js/easing.js"></script>
       <script type="text/javascript">
@@ -62,14 +57,26 @@
     <link href="/assets/css/clndr.css" rel="stylesheet" type="text/css">
 		
 		<!-- 크로셀-->
-		<link href="/assets/css/flickity.css" rel="stylesheet" type="text/css">
-    <script src="/assets/js/flickity.pkgd.min.js"></script>
+		
+	<link href="/assets/css/flickity.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="/assets/js/flickity.pkgd.min.js"></script>
+    
+	
     
  
 </head>
 <body>
 
+    
+
 <%= yield %>
+	
+    <script src="/assets/js/bigSlide.js"></script>
+            <script>
+				$(document).ready(function() {
+				$('.menu-link').bigSlide();
+				});
+            </script>
 
 </body>
 </html>

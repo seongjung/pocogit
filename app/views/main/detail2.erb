@@ -1,0 +1,255 @@
+<div class="body-back">
+	  
+		<div class="phone-box wrap push" id="home">
+			<div class="menu-notify">
+				<div class="profile-left">
+				
+					<a onclick="javascript:history.back();"><img src="/assets/images/ic_bar_back_wt_sm.png" class="pro-link" style="cursor:pointer"></a>
+					
+				</div>
+				<div class="Profile-mid">
+				    <a onclick="location.href='/main/index'"><img src="/assets/images/ic_bar_logo_wt_sm.png" class="pro-link" style="cursor:pointer"></a>
+			
+				</div>
+				<div class="Profile-right">
+					<img style="cursor: pointer" src="/assets/images/ic_bar_search_wt_sm.png" data-toggle="modal" data-target="#myModal2" >
+					<!-- Modal -->
+					<div id="myModal2" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					      
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <br>
+					      
+					        <form class="searchbox modal-title" action="/main/detail2/1">
+					          <input type="search" placeholder="Search" />
+					          <button type="submit" value="search">&nbsp;</button>
+					        </form>
+					      </div>
+					      <div class="modal-body">
+					      
+					     
+					        <div class="row">
+					    		<h3 style="color:#00c9b5; margin:30px">인기검색어</h3>
+					    		<div class="roundbox2"><h4 style="color:white">1. 2016 청춘 페스티벌</h4></div>
+					    		<div class="roundbox2" onclick="location.href='/main/detail2/1'"style="cursor:pointer"><h4 style="color:white">2. 월드 디제이 페스티벌</h4></div>
+					    		
+					    		<div class="roundbox2"><h4 style="color:white">3. 김준수 태국 콘서트</h4></div>
+					    		
+					    		<div class="roundbox2"><h4 style="color:white">4. 대림미술관 Color Your Life</h4></div>
+					    		
+					    		<div class="roundbox2"><h4 style="color:white">5. 지산 밸리록 페스티벌</h4></div>
+					    		
+					    		<div class="roundbox2"><h4 style="color:white">6. 장기하</h4></div>
+					    		
+					    		<div class="roundbox2"><h4 style="color:white">7. 서울 재즈 페스티벌</h4></div>
+					    	  </div>
+					    	
+					  
+					    	
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					<!--모달끝-->
+					  </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div> 
+			
+			
+			
+		<!--메인메뉴탭-->
+		
+		<div class="statistics">
+				<div class="stat-shade">
+				
+		            <!--탭전환 스크립트-->
+					<script src="/assets/js/easyResponsiveTabs.js" type="text/javascript"></script>
+						<script type="text/javascript">
+							$(document).ready(function () {
+								$('#horizontalTab').easyResponsiveTabs({
+									type: 'default', //Types: default, vertical, accordion           
+									width: 'auto', //auto or any width like 600px
+									fit: true   // 100% fit in a container
+								});
+							});
+							
+						</script>
+						<div class="sap_tabs">
+								<div id="horizontalTab" style="display: block; width: 100%; margin: 0px; background-color:#fff">
+									 
+								<div id="footer" style="position: fixed; bottom:0; width:100%; z-index:999">
+									<ul class="resp-tabs-list">
+										  <a onclick="location.href='/main/index'"><li class="resp-tab-item" aria-controls="tab_item-0" role="tab" id="tab_home"><span><img src="/assets/images/ic_home_white.png"></span></li></a>
+										  <a onclick="location.href='/main/calendar2'"><li class="resp-tab-item" aria-controls="tab_item-1" role="tab" id="tab_date"><span><img src="/assets/images/ic_date_white.png"></span></li></a>
+										  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab" id ="tab_favo"><span><img src="/assets/images/ic_favorite_white.png"></span></li>
+										  <li class="resp-tab-item" aria-controls="tab_item-3" role="tab" id="tab_person"><span><img src="/assets/images/ic_person_white.png"></span></li>
+										  <div class="clearfix"></div>
+									 </ul>
+					<!--아이콘변경 스크립트-->
+					
+									  <script>
+									  $('#tab_home').click(function() {
+                                            $(this).find("img").attr('src', '/assets/images/ic_home.png');
+                                            $('#tab_date').find("img").attr('src', '/assets/images/ic_date_white.png');
+                                            $('#tab_favo').find("img").attr('src', '/assets/images/ic_favorite_white.png');
+                                            $('#tab_person').find("img").attr('src', '/assets/images/ic_person_white.png');
+                                            $('html, body').animate({ scrollTop: 0 }, 'slow');
+                                        });
+                                      $('#tab_date').click(function() {
+                                            $(this).find("img").attr('src', '/assets/images/ic_date.png');
+                                            $('#tab_home').find("img").attr('src', '/assets/images/ic_home_white.png');
+                                            $('#tab_favo').find("img").attr('src', '/assets/images/ic_favorite_white.png');
+                                            $('#tab_person').find("img").attr('src', '/assets/images/ic_person_white.png');
+                                            $('html, body').animate({ scrollTop: 0 }, 'slow');
+                                        });
+                                        $('#tab_favo').click(function() {
+                                            $(this).find("img").attr('src', '/assets/images/ic_favorite.png');
+                                            $('#tab_home').find("img").attr('src', '/assets/images/ic_home_white.png');
+                                            $('#tab_date').find("img").attr('src', '/assets/images/ic_date_white.png');
+                                            $('#tab_person').find("img").attr('src', '/assets/images/ic_person_white.png');
+                                            $('html, body').animate({ scrollTop: 0 }, 'slow');
+                                        });
+                                        $('#tab_person').click(function() {
+                                            $(this).find("img").attr('src', '/assets/images/ic_person.png');
+                                            $('#tab_home').find("img").attr('src', '/assets/images/ic_home_white.png');
+                                            $('#tab_favo').find("img").attr('src', '/assets/images/ic_favorite_white.png');
+                                            $('#tab_date').find("img").attr('src', '/assets/images/ic_date_white.png');
+                                            $('html, body').animate({ scrollTop: 0 }, 'slow');
+                                        });
+									  </script>
+									</div>	  
+									  
+									  
+						<!--탭시작		  -->
+						<div class="month-graph">
+                            <div class="row">
+                        	    <div>
+                        		<p style="margin-left:10px; margin-top:10px; text-align:left; color:#00c9b5"> <b><%=@showdetail.showname%></b></p>
+                        		<p style="margin-left:10px; margin-top:10px; text-align:left; color:grey">라이브콘서트|420분|전체관람가</p>
+                        		</div>
+                        	</div>
+                        	<hr>
+                        	<div class="row">
+                        	    <img src="<%=@showdetail.showimg%>" style="width:250px">
+                        	</div>
+                        	<hr>
+                        	<div class="row">
+                        		<div class="col-xs-2">
+                        		    <p style=" text-align:left;"> 공연 </p>
+                        		    <p style=" text-align:left;"> 장소 </p>
+                        		</div>
+                        		<div class="col-xs-6">
+                        		    <p style="margin-left:2px; text-align:left;"> 지산 리조트 </p>
+                        		    <p style="margin-left:2px; text-align:left;"> <%=@showdetail.showdate%></p>
+                        		</div>
+                        		<div class="col-xs-2" id="calcheckid" style="cursor:pointer">
+                        		  <img src="/assets/images/detail/ic_page_calendar_check_gr_sm.png"/>
+                        		  <img src="/assets/images/detail/ic_page_calendar_check_rd_sm.png" style="display:none"/>
+                        		</div>
+                        		<div class="col-xs-2" id="starcheckid" style="cursor:pointer">
+                        	    	<img src="/assets/images/detail/ic_page_calendar_star_gr_sm.png">
+                        	    	<img src="/assets/images/detail/ic_page_calendar_star_yellow_sm.png" style="display:none">
+                        	    
+                        	    </div>
+                        	
+                                <script>
+                                $("#calcheckid img").click(function() {
+                                    $("#calcheckid img").toggle();
+                                });
+                                $("#starcheckid img").click(function() {
+                                    $("#starcheckid img").toggle();
+                                });
+                               
+                                </script>
+                        	    
+                        	</div>	
+                            	<hr>
+                            <p style="margin-left:10px; text-align:left;"> 출연 아티스트 </p>
+                            <div class="row">
+                            	    <div class="col-xs-1">
+                            	    </div>
+                            		<div class="col-xs-2">
+                            	    	<img src="/assets/images/detail/ic_artist_butten_profile_mt_sm.png">
+                            		</div>
+                                	<div class="col-xs-2">
+                            	    	<img src="/assets/images/detail/ic_artist_butten_profile_mt_sm.png">
+                            		</div>
+                            		<div class="col-xs-2">
+                            	    	<img src="/assets/images/detail/ic_artist_butten_profile_mt_sm.png">
+                            		</div>
+                            		<div class="col-xs-2">
+                            	    	<img src="/assets/images/detail/ic_artist_butten_profile_mt_sm.png">
+                            		</div>
+                            		<div class="col-xs-2">
+                            	    	<img src="/assets/images/detail/ic_artist_butten_profile_mt_sm.png">
+                            		</div>	
+                        	</div>
+                        	<hr>
+                        	<div class="row">
+                        		<div class="col-xs-2">
+                        		    <p style=" text-align:left;"> 가격 </p>
+                        		    <p style=" text-align:left;"> 예매 </p>
+                        		</div>
+                        		<div class="col-xs-5">
+                        		    <p style="margin-left:2px; text-align:left;"> 1일권(4차티켓)</p>
+                        		    <p style="margin-left:2px; text-align:left;"> 인터파크 </p>
+                        	    </div>
+                        	    <div class="col-xs-5">
+                        		    <p style="color:red; margin-left:2px; text-align:left;"> 144,000원</p>
+                        	    </div>
+                        	</div>   
+                            	<a href="<%=@showdetail.showurl%>" target="_blank"><img src="/assets/images/detail/ic_page_ticket_butten_sm.png"></a>
+                        	<hr>
+                        	<div class="row">
+                            	    
+                            		<div class="col-xs-3">
+                            	    	<a href="<%=@showdetail.showurl%>" target="_blank"><p style="font-size:5px; text-align:left;"> 안내사항 </p></a>
+                            		</div>
+                                	<div class="col-xs-2">
+                            	    	<a href="<%=@showdetail.showurl%>" target="_blank"><p style="font-size:5px; text-align:left;"> 상세정보 </p></a>
+                            		</div>
+                            		<div class="col-xs-2">
+                            	    	<a href="<%=@showdetail.showurl%>" target="_blank"><p style=" font-size:5px; text-align:left;"> 리뷰 </p></a>
+                            		</div>
+                            		<div class="col-xs-3">
+                            	        <a href="<%=@showdetail.showurl%>" target="_blank"><p style=" font-size:5px; text-align:left;"> 공연장정보 </p></a>
+                            		</div>
+                            		<div class="col-xs-1">
+                            	    	<a href="<%=@showdetail.showurl%>" target="_blank"><p style="font-size:5px; text-align:left;"> QnA </p></a>
+                            		</div>	
+                        	</div>
+                        	<br>
+                        	<p style="font-size:10px; margin-left:10px; text-align:left;"> ※ 매수제한 : 1인 8매 </p>
+                        	<p style="font-size:10px; margin-left:10px; text-align:left;"> ※ 분실, 파손 등 어떠한 경우에도 재발권 및 입장이</p>
+                        	<p style="font-size:10px; margin-left:10px; text-align:left;"> 불가능하오니, 티켓보관에 유의해주시기 바랍니다. </p>
+                        	<p style="font-size:10px; margin-left:10px; text-align:left;"> ※  작품설명 내 노출되어 있는 페스티벌 안내는 관객 여러분의/p>
+                        	<p style="font-size:10px; margin-left:10px; text-align:left;"> 안전하고 즐거운 페스티벌 관람에 도움을 드리고</p>
+                        	<p style="font-size:10px; margin-left:10px; text-align:left;"> 각종 불편사항을 최소화하기 위해 준비되었습니다. 티켓 구매</p>
+                        	<p style="font-size:10px; margin-left:10px; text-align:left;"> 전 아래 페스티벌 안내를 반드시 읽어주시기 바랍니다.</p>
+                        	<br>
+                        	<a href="http://www.facebook.com" target="_blank"><img src="/assets/images/detail/ic_page1_share_sm.png"></a>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+									
+									
+								</div>
+						</div>
+				</div>
+			</div>
+  </div>
+</div>
+</div>
+
+<script src="/assets/js/jquery.nicescroll.js"></script>
+<script src="/assets/js/scripts.js"></script>
+</body>

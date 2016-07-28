@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 20160726063930) do
     t.string   "artistname"
     t.string   "artistimg"
     t.string   "artistsns"
-    t.string   "artistlove"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "artistlove", default: "0"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "likes", force: :cascade do |t|
@@ -38,17 +38,17 @@ ActiveRecord::Schema.define(version: 20160726063930) do
 
   create_table "shows", force: :cascade do |t|
     t.string   "showname"
-    t.datetime "showdate"
+    t.string   "showdate"
     t.string   "showimg"
     t.string   "showurl"
-    t.integer  "showlike"
+    t.integer  "showlike",   default: 0
     t.integer  "price"
     t.integer  "artist_id1"
     t.integer  "artist_id2"
     t.integer  "artist_id3"
     t.integer  "artist_id4"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "users", force: :cascade do |t|

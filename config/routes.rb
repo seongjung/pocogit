@@ -3,7 +3,8 @@ Rails.application.routes.draw do
     root :to => 'main#index'
       get ':controller(/:action(/:id))'
       post ':controller(/:action(/:id))'
-
+      post '/users/sign_up' => '/main/tutorial'
+      
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
